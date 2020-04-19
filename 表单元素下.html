@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单输入下</title>
+</head>
+
+<body>
+    <form action="" oninput="res.value=num1.valueAsNumber*num2.valueAsNumber">
+        <!-- <select name="fruit" id="" size="5" multiple>
+            <optgroup label="水果类">
+                <option value="1">苹果</option>
+                <option value="2">香蕉</option>
+                <option value="3">桔子</option>
+            </optgroup>
+            <optgroup label="杂粮">
+                <option value="4" selected>西瓜</option>
+                <option value="5">牛皮</option>
+                <option value="6">黄瓜</option>
+            </optgroup>
+        </select> -->
+        <!-- <textarea name="content" id="" cols="30" rows="10" wrap="hard">
+            请留下您的建议
+        </textarea> -->
+        <!-- <input type="number" id="num1"> X <input type="number" id="num2">= -->
+        <!-- <output for="num1,num2" name="res"></output> -->
+        <!-- 限定在某一个范围内 -->
+        <input type="number" min="10" max="100">
+        <!-- 使用正则表达式 -->
+        <input type="text" placeholder="请输入区号+座机号" required pattern="^[\d]{2,4}\-[\d]{6,8}$"> 
+        <!-- 禁止表单验证 -->
+        <form action="http://www.baidu.com" novalidate></form>
+        <button>提交</button>
+    </form>
+</body>
+
+</html>
