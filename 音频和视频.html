@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,21 @@
     <!-- <script src="./js/jquery-3.5.0.min.js" type="text/javascript"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script>
-
+        var a = true;
         // $("cricle").hover.animate({border:"5px solid gold;"},2)
         var rotateindex = 45;
         var t;
         //字动播放歌曲
-        function myplay() {
-            var player = $("#myplay")[0]; /*jquery对象转换成js对象*/
-            if (player.paused) { /*如果已经暂停*/
-                player.play(); /*播放*/
-            }
-            // } else {
-            //     player.pause();/*暂停*/
-            // }
-        }
+        // function myplay() {
+        //     //var player = $("#myplay")[0]; /*jquery对象转换成js对象*/
+        //     var music = document.getElementById("myplay"); 
+        //     if (music.paused) { //判读是否播放  
+        //         music.paused = false;
+        //         music.play();
+        //     } else {
+        //         music.play();
+        //     }
+        // }
         function time() {
             var deg = rotateindex + 'deg';
             $(".cricle").css('transform', 'rotate(' + deg + ')')
@@ -36,69 +37,90 @@
             switch (deg) {
                 case "45deg":
                     $(".cricle").css('border', '20px solid #eaff56')
+                    $("body").css('background', '#eaff56')
                     break;
                 case "46deg":
                     $(".cricle").css('border', '20px solid #bce672')
+                    $("body").css('background', '#bce672')
                     break;
                 case "47deg":
                     $(".cricle").css('border', '20px solid #ff461f')
+                    $("body").css('background', '#ff461f')
                     break;
                 case "48deg":
                     $(".cricle").css('border', '20px solid #70f3ff')
+                    $("body").css('background', '#70f3ff')
                     break;
                 case "49deg":
                     $(".cricle").css('border', '20px solid #fff143')
+                    $("body").css('background', '#fff143')
                     break;
                 case "50deg":
                     $(".cricle").css('border', '20px solid #c9dd22')
+                    $("body").css('background', '#c9dd22')
                     break;
                 case "60deg":
                     $(".cricle").css('border', '20px solid #ff2d51')
+                    $("body").css('background', '#ff2d51')
                     break;
                 case "61deg":
                     $(".cricle").css('border', '20px solid #44cef6')
+                    $("body").css('background', '#44cef6')
                     break;
                 case "62deg":
                     $(".cricle").css('border', '20px solid #faff72')
+                    $("body").css('background', '#faff72')
                     break;
                 case "63deg":
                     $(".cricle").css('border', '20px solid #bddd22')
+                    $("body").css('background', '#bddd22')
                     break;
                 case "64deg":
                     $(".cricle").css('border', '20px solid #f36838')
+                    $("body").css('background', '#f36838')
                     break;
                 case "65deg":
                     $(".cricle").css('border', '20px solid #3eede7')
+                    $("body").css('background', '#3eede7')
                     break;
                 case "66deg":
                     $(".cricle").css('border', '20px solid #ffa631')
+                    $("body").css('background', '#ffa631')
                     break;
                 case "67deg":
                     $(".cricle").css('border', '20px solid #afdd22')
+                    $("body").css('background', '#afdd22')
                     break;
                 case "68deg":
                     $(".cricle").css('border', '20px solid #ed5736')
+                    $("body").css('background', '#ed5736')
                     break;
                 case "69deg":
                     $(".cricle").css('border', '20px solid #1685a9')
+                    $("body").css('background', '#1685a9')
                     break;
                 case "70deg":
                     $(".cricle").css('border', '20px solid #ffa400')
+                    $("body").css('background', '#ffa400')
                     break;
                 case "71deg":
                     $(".cricle").css('border', '20px solid #a3d900')
                     break;
                 case "72deg":
                     $(".cricle").css('border', '20px solid #ff4777')
+                    $("body").css('background', '#ff4777')
                     break;
                 case "73deg":
                     $(".cricle").css('border', '20px solid #177cb0')
+                    $("body").css('background', '#177cb0')
                     break;
                 case "74deg":
                     $(".cricle").css('border', '20px solid #fa8c35')
+                    $("body").css('background', '#fa8c35')
                     break;
                 case "75deg":
                     $(".cricle").css('border', '20px solid #9ed900')
+                    $("body").css('background', '#9ed900')
                     break;
                 case "76deg":
                     $(".cricle").css('border', '20px solid #f47983')
@@ -174,7 +196,7 @@
                     break;
                 case "100deg":
                     $(".cricle").css('border', '20px solid #a78e44')
-                    $(".pic").attr("src","http://pic.qqtn.com/up/2017-11/15114164958379622.jpg")
+                    $(".pic").attr("src", "http://pic.qqtn.com/up/2017-11/15114164958379622.jpg")
                     break;
                 case "101deg":
                     $(".cricle").css('border', '20px solid #88ada6')
@@ -323,7 +345,7 @@
                     break;
                 case "150deg":
                     $(".cricle").css('border', '20px solid #ffb61e')
-                    $(".pic").attr("src","http://www.chabeichong.com/images/2016/10/21-06155760.jpg")
+                    $(".pic").attr("src", "http://www.chabeichong.com/images/2016/10/21-06155760.jpg")
                     break;
                 case "151deg":
                     $(".cricle").css('border', '20px solid #ffa400')
@@ -412,7 +434,7 @@
                 case "180deg":
                     $(".cricle").css('border', '20px solid #99CCFF')
                     break;
-                    case "181deg":
+                case "181deg":
                     $(".cricle").css('border', '20px solid #eaff56')
                     break;
                 case "182deg":
@@ -471,7 +493,7 @@
                     break;
                 case "200deg":
                     $(".cricle").css('border', '20px solid #177cb0')
-                    $(".pic").attr("src","http://p0.so.qhmsg.com/t011de13be0ebd9953b.jpg")
+                    $(".pic").attr("src", "http://p0.so.qhmsg.com/t011de13be0ebd9953b.jpg")
                     break;
                 case "201deg":
                     $(".cricle").css('border', '20px solid #fa8c35')
@@ -787,7 +809,7 @@
                     break;
                 case "280deg":
                     $(".cricle").css('border', '20px solid #99CCFF')
-                    $(".pic").attr("src","https://p0.ssl.qhimgs1.com/sdr/400__/t01d185e5b1ed1edf26.jpg")
+                    $(".pic").attr("src", "https://p0.ssl.qhimgs1.com/sdr/400__/t01d185e5b1ed1edf26.jpg")
                     break;
             }
 
@@ -800,14 +822,22 @@
             t = setTimeout("time()", 10)
         }
         $(document).ready(function () {
-            window.alert('点击光圈播歌曲');
             $(".cricle").hover(function () {
-                time();
-                myplay();
+                
+                var audio = document.getElementById("myplay");
+                document.addEventListener('click', () => {
 
-
+                    if (a) {
+                        window.alert('点击以播放');
+                        time();
+                        console.log(a);
+                        audio.play();
+                        a=false;
+                    }
+                });
             })
         })
+
     </script>
 </head>
 <style>
@@ -865,10 +895,10 @@
         <!-- <video class="video" src="https://learning.dcloud.io/video/chapter_00.mp4" poster="cat.jpg" muted width="320"
             height="300" controls loop="true"></video> -->
         <!-- <img class="pic" src="./cat.jpg"> -->
-        <img class="pic"  src="https://p2.ssl.qhimgs1.com/t01501b90694af8f078.jpg" alt="cat">
+        <img class="pic" src="https://p2.ssl.qhimgs1.com/t01501b90694af8f078.jpg" alt="cat">
     </div>
     <div class="controller">
-        <audio id="myplay"  controls="controls" src="http://ting6.yymp3.net:86/new19/wangsulong/8.mp3">
+        <audio id="myplay" hidden="true" controls="controls" src="http://ting6.yymp3.net:86/new19/wangsulong/8.mp3">
         </audio>
     </div>
 </body>
