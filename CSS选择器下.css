@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* CSS伪类选择器分为四种类型：结构性伪类、UI伪类、动态伪类、和其它伪类选择器  */
+/* 结构性伪类选择器：结构性伪类选择器能够根据元素在文档中的位置选择元素。这类元素都有一个前缀() */
+
+/* 根元素选择器 */
+/* :root {
+    border: 1px solid red;
+} */
+
+/* 伪类，子元素选择器 */
+/* 伪类都需要加上前置选择器来限制范围 */
+/* ul >li:first-child{
+    color: red;
+} */
+
+/* 选择元素的最后一个子元素 */
+/* ul >li:last-child{
+    color: red;
+} */
+
+/* 选择只有一个子元素的那个子元素 */
+/* ul>li:only-child{
+    color: pink;
+} */
+
+/* 选择只有一个指定类型的子元素的那个子元素 */
+/* div>p:only-of-type{
+    color: gold;
+} */
+
+/*选取子元素的第二个元素*/
+/* ul>li:nth-child(2){
+    color: gold;
+} */
+
+/* 选择子元素倒数第二个元素 */
+/* ul>li:nth-last-child(2){
+    color: greenyellow;
+} */
+
+/* 选择特定子元素的第二个元素 */
+/* div>p:nth-of-type(2){
+    color: green;
+} */
+
+/* 选择特定子元素的倒数第二个子元素 */
+/* div>p:nth-last-of-type(1){
+    color:red;
+} */
+
+/* ui伪类选择器 */
+/* UI伪类选择器是根据元素的状态匹配元素 */
+/* input:enabled{
+    border: 1px solid red;
+}
+
+/* 选择禁用状态的input元素 */
+/* input:disabled{
+    border: 1px solid blue;
+}  */
+
+/* 隐藏勾选的input元素 */
+/* input:checked{
+    display:none;
+} */
+
+/* 从一组类似的元素中选择默认元素.比如 input被勾选的即默认的。 */
+input:default{
+    display: none;
+}
+
+/* 输入验证合法与不合法显示时选择的元素。 */
+/* 是否需要必填属性 */
+/* input:valid{
+    border: 1px solid green;
+}
+
+input:invalid{
+    border: 1px solid red;
+} */
+
+/* 必填 */
+/* input:required{
+    border: 1px solid red;
+} */
+
+/* 非必填 */
+/* input:optional{
+ border: 1px solid blue;
+} */
+
+
+
+/* 动态伪类选择器 */
+/* a:link{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+
+/* 鼠标悬停 */
+/* a:hover{
+    color:orange;
+} */
+
+/* 鼠标活动 
+a:active{
+    color:green;
+} */
+
+/* input:focus{
+    border: 1px solid red;
+} */
+
+
+/* 其它伪类选择器 */
+a:not([href*="baidu"]){
+    color: red;
+}
+
+/* 匹配没有任何内容的元素 */
+/* p:empty{
+    display: none;
+} */
+
+/* 语言 */
+P:lang(en){
+    color: red;
+}
+
+/* 锚点定位 */
+b:target{
+    color: red;
+}
+
+/* 伪元素选择器 */
+/* 选定字体变红 */
+::selection{
+    color: red;
+}
