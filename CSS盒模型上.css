@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* body{
+     width: 600px; 
+    border: 1px solid red;
+    margin: 0;
+} */
+
+div{
+    background: silver;
+    width: 200px;
+    height: 200px;
+
+    
+     /* 限制元素的固定尺寸 */
+    /* 这一组主要是应对可能动态产生元素尺寸变大变小的问题，从而限制它最大和最小尺寸 */
+    /* min-width: 100px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 300px; */
+
+    /* width: 60%; */
+
+    /* width: 50px; */
+    /* width: 50%; */
+    /* width:auto;
+    height:auto; */
+
+    /* padding-top:10px;
+
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+
+    /* padding: 10px; */
+    /* padding: 10px 20px; */
+
+    /* 上面空出10px 下面空出30px 左边和右边 20px*/
+    /* padding: 1px 20px 30px; */
+
+    /* padding: 10px 20px 30px 40px;
+
+    margin-top: 50px;
+    margin-left: 50px; */
+
+    /* 溢出:默认情况 visible,不处理,auto：浏览器自动处理溢出内容
+    hidden:裁剪掉溢出的部分，但不是文字内容,
+    scroll不管是否溢出，都会出现滚动条，但不同平台和浏览器显示方式不同*/
+    /* overflow-y: hidden; */
+    /* overflow: auto; */
+
+
+}
