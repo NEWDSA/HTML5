@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{
+    font-size: 50px;
+    font-variant: small-caps;
+}
+P{
+    /* font-size: 50px; */
+    /* 设置字体大小。每个值从小到大的固定值 */
+    /* font-size: xx-small; */
+    /* font-size: xx-large; */
+
+    /* smaller、larger 设置字体相对父元素字体的大小 */
+    /* font-size:smaller; */
+    /* font-size: larger; */
+
+    /* 将字体设置为以小型大写字母显示 */
+    /* font-variant: small-caps; */
+
+    /* 如果以小型大写状态，让它恢复小写状态 */
+    /* font-variant: normal; */
+
+    /* 字体倾斜 */
+
+    /* 使用斜体 */
+    /* font-style: italic; */
+
+    /* 让文字倾斜 */
+    font-style:oblique;
+    
+}
