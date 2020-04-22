@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+P{
+    font-size: 50px;
+    background: silver;
+    /* 文本装饰 */
+    /* 底部加线条 */
+    /* text-decoration: underline; */
+
+    /* 头部加一条线 */
+    /* text-decoration: overline; */
+
+    /* 中间加一条删除线 */
+    /* text-decoration:line-through; */
+
+    /* 增加闪动线 */
+    /* text-decoration:blink; */
+
+    /* 将小写转换为大写 */
+    /* text-transform: uppercase; */
+
+    /* 将大写转换为小写 */
+    /* text-transform: lowercase; */
+
+    /* 将英文单词首字母大写 */
+    /* text-transform:capitalize; */
+
+    /* 给文本添加阴影 CSS3 */
+    /* 给文本添加阴影。其中四个值，第一个值：水平偏移：第二个值：垂直偏移
+    第三个值：阴影模糊度（可选）第四个值：阴影颜色（可选） */
+    /* color: blue; */
+    /* text-shadow: 5px 5px 3px pink; */
+
+    /* 文本控制 start和end属于 CSS3新增功能 */
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    /* text-align: start; */
+    /* text-align: end; */
+
+    /* 处理空白排版方式 */
+
+    /* 默认值，空白符被压缩，文本自动换行 */
+    /* white-space:normal; */
+
+    /* 空白符被压缩，文本不换行 */
+    /* white-space: nowrap; */
+
+    /* 空白符被保留,遇到换行符(回车)则换行 */
+    /* white-space: pre; */
+
+    /* 空白符被压缩，文本会在排满或遇换行符换行 */
+    /* white-space:pre-line; */
+
+    /* 空白符被保留，文本会在排满或遇到换行符换行 */
+    /* white-space: pre-wrap; */
+
+    /* 设置文本之间的间距 */
+    /* letter-spacing: 5px; */
+
+    /* 设置英文单词之间的间距 注意英文单词间需存在空格 */
+    /* word-spacing: 300px; */
+
+    /* 设置行高:设置段落高度，数值：1代表100%、2代表200%、3代表300%,normal设置默认间距*/
+    /* line-height: 200%; */
+
+    /* 英文状态下,让过长的字段断开：在英文单词没有空格的情况下有用*/
+    /* word-wrap:break-word; */
+
+    /* 设置文本首行缩进 */
+    text-indent: 50px;
+
+}
+
+/* 将本身有的下划线去掉 */
+a{
+    text-decoration: none;
+}
