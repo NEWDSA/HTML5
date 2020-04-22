@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+div{
+    background: silver;
+    width: 200px;
+    height: 200px;
+
+    /* 元素可见性 使用 visibility 属性可以实现元素的可见性。 */
+
+    /* visible 默认值,元素在页面上可见 */
+    /* visibility: visible; */
+
+    /* 元素不可见,但会占据空间 */
+    /* visibility: hidden; */
+
+    /* visibility:collapse; */
+
+}
+
+table tr:first-child{
+    /* visibility: hidden; */
+
+    /* 元素不可见,隐藏表格的行与列,如果不是表格,则和hidden一样. */
+    visibility:collapse;
+}
+
+/* 元素盒类型 CSS盒模型中的display属性可以更改元素本身盒类型 */
+/* 盒类型主要有: 1.块级元素(区块),2.行内元素(内联),3.行内-块级元素(内联块),4.隐藏元素 */
