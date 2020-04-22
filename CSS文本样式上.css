@@ -1,10 +1,19 @@
 @charset "utf-8";
+
 body{
     font-size: 50px;
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
 }
+
+/* web字体：服务器端字体 */
+
+@font-face{
+    font-family:'abc';
+    src: url('BRUSHSCI.TTF');
+}
+
 P{
-    /* font-size: 50px; */
+    font-size: 50px;
     /* 设置字体大小。每个值从小到大的固定值 */
     /* font-size: xx-small; */
     /* font-size: xx-large; */
@@ -25,6 +34,28 @@ P{
     /* font-style: italic; */
 
     /* 让文字倾斜 */
-    font-style:oblique;
+    /* font-style:oblique; */
+
+    /* 设置字体加粗 */
+    /* font-weight: bold; */
+    /* font-weight: bolder; */
+    /* font-weight: lighter; */
+
+    /* 100 ~ 900之间的数字 600及之后是加粗，之前不加粗 */
+    /* font-weight: 100; */
+
+    /* 设置字体 */
+    /* font-family: 微软雅黑; */
+    /* font-family: 楷体,微软雅黑,宋体; */
+
+    /* 设置字体大小，及字体类型简写 */
+    /* font:50px 楷体; 注意 字体大小 字体样式必须放在后面 */
+    /* font: italic bold small-caps 50px 楷体; */
+
+    /* 使用web字体 */
+    font-family: abc;
+
+    /* 一些小建议，英文字体文件比较小，而中文字体则很大。所以，中文如果想用特殊字体可以使用图片。大面积使用特殊中文字体，就不太建议了 */
+
     
 }
