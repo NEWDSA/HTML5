@@ -1,0 +1,50 @@
+# CSS表格与列表 #
+本章主要探讨 HTML5 中 CSS 表格和列表，通过表格和列表的样式设置，让表格和列表显示更加多元化
+## 表格样式 ##
+表格有五种独有样式，样式表如下：
+<html>
+<table>
+<tr>
+<td>属性</td><td>值</td><td>说明</td><td>CSS版本</td>
+</tr>
+<tr>
+<td>border-collapse</td><td>边框样式</td><td>相邻单元格边框间距</td><td>2</td>
+</tr>
+<tr>
+<td>border-spacing</td><td>长度值</td><td>相邻单元格的间距</td><td>2</td>
+</tr>
+<tr>
+<td>caption-side</td><td>位置名称</td><td>表格标题位置</td><td>2</td>
+</tr>
+<tr>
+<td>empty-cells</td><td>显示值</td><td>单元格是否显示边框</td><td>2</td>
+</tr>
+<tr>
+<td>table-layout</td><td>布局样式</td><td>指定表格的布局样式</td><td>2</td>
+</tr>
+</table>
+</html>
+1.border-collapse
+<html>
+<table>
+ <tr>
+ <td>值</td><td>说明</td><td>CSS版本</td>
+ </tr>
+ <tr>
+ <td>separate</td><td>默认值，单元格边框独立</td><td>2</td>
+ <tr>
+ <td>collapse</td><td>单元格相邻边框被合并</td><td>2</td>
+ </tr>
+</table>
+</html>
+2.border-spacing
+<html>
+<table>
+<tr>
+ <td>值</td><td>说明</td><td>CSS版本</td>
+ </tr>
+ <tr>
+ <td>长度值</td><td>0表示间距，其他使用CSS长度值</td><td>2</td>
+ </tr>
+ </table>
+</html>
