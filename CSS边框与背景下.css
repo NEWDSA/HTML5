@@ -1,0 +1,54 @@
+@charset "utf-8";
+html{
+    height: 100%;
+}
+body{
+    /* background-color: silver; */
+
+    /* 背景图片的用法 */
+     background-image: url(little.jpg);
+    /* background-image: none;  */
+
+    /* 背景水平平铺 */
+    /* background-repeat: repeat-x; */
+
+    /* 背景垂直平铺 */
+    /* background-repeat: repeat-y; */
+
+    /* 背景水平和垂直都平铺，默认值 */
+    /* background-repeat: repeat; */
+
+    /* 禁止水平和垂直平铺，显示一张图片 */
+    background-repeat: no-repeat;
+
+    /* background-position: top; */
+
+    /* 通过html设置100%可以让图片定位在网页的底部 */
+    /* background-position: bottom; */
+
+    /* background-position: center; */
+
+    /* 组合方式  */
+    /* background-position: top right; */
+
+    /* 左下角 */
+    /* background-position: left bottom; */
+
+}
+div{
+    width: 500px;
+    height: 300px;
+    /* background-color: orange; */
+    
+}
+
+/* div b{
+    background-color: red;
+} */
+
+/* 解释：默认值为 transpartent，为透明的意思。这样<div>内部的元素就会继承<div>的背景色
+    一般来说这个属性使用频率很低，原因是不需要改变色彩时就默认，需要改变颜色时又是颜色值。
+ */
+/* div b:first-child{
+    background-color: transparent;
+} */
