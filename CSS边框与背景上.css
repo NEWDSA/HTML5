@@ -3,7 +3,52 @@
 div{
     width: 200px;
     height: 200px;
-    border-style:solid;
-    border-color: red;
-    border-width: border;
+    /* border-style:solid; */
+    /* border-color: red; */
+    /* border-width: border; */
+    /* border-width: 10px; */
+    /* border-width:medium; */
+    /* border-width: 10px; */
+    /* border-style: none; */
+
+    /* 虚线 */
+    /* border-style:dashed; */
+
+    /* 点线 */
+    /* border-style: dotted; */
+
+    /* 双线 */
+    /* border-style: double; */
+
+    /* 槽线边线 */
+    /* border-style: groove; */
+
+    /* 使元素内容具有内嵌效果的边框 */
+    /* border-style: inset; */
+
+    /* 使元素内容具有外凸效果的边框 */
+    /* border-style: outset; */
+
+    /* 脊线边框 */
+    /* border-style: ridge; */
+    
+    border: 1px solid red;
+
+    /* 设置上边框样式，宽度，颜色 */
+    /* border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 10px; */
+
+    /* 设置上边框简写 */
+    /* border-top: 10px solid red; */
+
+    /* 圆角边框 四条边角 */
+    /* border-radius:10px ; */
+
+    /* 圆角边框 单独设置每一个 */
+    /* border-radius: 10px 20px 30px 50px; */
+
+    /* 圆角边框 设置右上边角 */
+    border-top-right-radius: 40px;
+
 }
