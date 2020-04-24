@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+div{
+
+    width: 200px;
+    height: 200px;
+    /* background-color: green; */
+    /* 设置前景色，文字的颜色 */
+    /* color: blue; */
+
+    /* 设置透明度,透明度对前景色和背景色都起作用 */
+    /* opacity: 0.1; */
+
+    border: 10px solid green;
+}

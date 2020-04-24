@@ -1,1 +1,98 @@
 @charset "utf-8";
+
+table{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+
+    /*默认值, 边框会被分开 */
+    /* border-collapse: separate; */
+
+    /* 边框会合并为一个单一的边框 */
+    /* border-collapse: collapse; */
+
+    /* 表示填充的间距 */
+    /* 填充间距必须在没有合并的情况下才有用 */
+    /* border-spacing:10px; */
+
+    /* 设置标题在下方 */
+    /* caption-side: bottom; */
+
+    /* 设置如果有空单元格是否显示 */
+    /* empty-cells:hide; */
+
+    /* 表格的扩展方式 */
+    /* 默认 auto是不变的 */
+    /* table-layout: auto; */
+
+    /* 内容过长时，不拉伸整个单元格 */
+    /* table-layout:fixed; */
+
+    border: 1px solid red;
+
+}
+
+table tr th,table tr td{
+    border: 1px solid red;
+}
+
+ul{
+    
+    width: 120px;
+    /* list-style-type: square; */
+    /* list-style-position: outside; */
+
+    /* inside成为内容的一部分 */
+    /* list-style-position: inside; */
+    /* list-style-image: url(circle.png); */
+
+
+    /* 简写形式 */
+
+    list-style: square inside url(circle.png);
+}
+
+.sex{
+
+    /* 将单元格垂直顶部对齐 */
+    /* vertical-align:top; */
+
+    /* 将单元格垂直底部对齐 */
+    /* vertical-align: bottom; */
+
+    /* 将单元格垂直基线对齐，默认基线在上面 */
+    /* vertical-align: baseline; */
+
+    /* 将单元格在垂直中部对齐 */
+    /* vertical-align: middle; */
+
+}
+
+b{
+    /* 垂直对齐文本的下标 */
+    /* vertical-align: sub; */
+
+    /* 垂直对齐文本的上标 */
+    /* vertical-align: super; */
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background: silver;
+    text-align: center;
+    /* vertical-align:bottom; */
+}
+
+/* 在div内容如何让文本内容垂直居中方法 
+ * 首先需要添加内联元素
+ */
+ div span{
+     background: green;
+     /* vertical-align: -10px; */
+     vertical-align: -200%;
+ }
+
+ em{
+     vertical-align:50px;
+ }
