@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+div {
+    width: 400px;
+    height: 400px;
+    border-image-source: url(border.png);
+    border-image: 81px;
+    /* border-width: 81px; */
+
+}
