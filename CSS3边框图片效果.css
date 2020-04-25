@@ -3,8 +3,21 @@
 div {
     width: 400px;
     height: 400px;
-    border-image-source: url(border.png);
-    border-image: 81px;
+
+    /* 解决图片不显示问题 */
+    border:1px solid transparent;
+    /* border-image-source: url(border.png);
+    border-image-width: 27px;
+    border-image-slice: 30;
+    border-image-repeat: round; */
+    /* border-image-slice: 0 fill; */
     /* border-width: 81px; */
+
+    /* border-image-source: url(button.png);
+    border-image-width: 10px;
+    border-image-slice: 10 fill; */
+
+    /* 简写形式 */
+    border-image: url(border.png) 27/27px round;
 
 }
