@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+div{
+    width: 500px;
+    height: 200px;
+    /* background: green; */
+
+    /* 增加渐变背景 */
+
+
+    /* 优雅降级 */
+    /* background-color: green; */
+
+    /* 默认状态下的颜色 底部开始 */
+    /* background-image: linear-gradient(orange,green); */
+
+    
+
+    /* background-image:linear-gradient(to top right,orange,green); */
+
+    /* 通过角度调整渐变效果 */
+    /* background-image: linear-gradient(-45deg,orange,green); */
+
+    /* 多色线性渐变 使用百分比 */
+    /* background-image: linear-gradient(-45deg,orange 0%,green,blue 0%,red); */
+
+    /* 多色线性渐变 使用像素 px*/
+    /* background-image: linear-gradient(-45deg,orange 10px,green 10px,blue,red 500px); */
+
+    /* background-color: red; */
+
+    /* background-image: linear-gradient( to top right, rgba(0,0,0,0.6),rgba(197, 104, 104, 0.6)); */
+
+    /*重复渐变属性值*/
+    /* background-image: repeating-linear-gradient(orange 10px,green 30px); */
+
+    /*background-image: -webkit-linear-gradient(orange,green);*/  /*webkit浏览器目前还没有剔除前缀*/
+
+    /*background-image: -moz-linear-gradient(orange,green);*/ /*firefox 目前也没有剔除前缀*/
+
+    /* 径向渐变 */
+    background-image:radial-gradient(orange,green);
+
+    /* background-image: radial-gradient(circle,orange,green); */
+    /* background-image: radial-gradient(circle at top,orange,green); */
+    /* background-image: radial-gradient(circle at top right,orange,green); */
+
+    /* 离圆心最近的边 */
+    /* background-image: radial-gradient(circle closest-side,orange,green); */
+
+    /* 离圆心最近的角 */
+    /* background-image: radial-gradient(circle closest-corner,orange,green); */
+
+    /* 关键字有点拗口，可以使用像素表示半径，不能接收负值 */
+    /* background-image: radial-gradient(circle 50px,orange,green); */
+
+    /* 重复背景 */
+    background-image: repeating-radial-gradient(circle 50px,orange,green);
+
+}
