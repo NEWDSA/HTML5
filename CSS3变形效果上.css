@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body{
+    margin: 100px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    box-shadow: 20px 20px 2px gray;
+
+    /* transform:translate(200px,200px); */
+
+    /* 向下平移 */
+    /* transform: translate(0,200px); */
+
+    /* 只平移单项 */
+    /* transform: translateX(200px); */
+
+    /* 缩放 大于1就是放大 */
+    /* transform: scale(1.5); */
+
+    /* 缩小 0.5 */
+    /* transform: scale(0.5); */
+
+    /* transform: scale(1.5,2.0); */
+
+    /* transform:scaleX(0.5); */
+
+    /* transform:scaleY(0.5); */
+
+    /* 旋转元素 0~360度之间，负值均可 */
+    /* transform:rotate(-45deg); */
+
+    /* 倾斜元素 0~360度之间,负值均可 */
+    /* transform: skew(45deg,20deg); */
+
+    /* X轴倾斜 */
+    /* transform: skewX(30deg); */
+
+    /* Y轴倾斜 */
+    /* transform: skewY(45deg); */
+
+    /* 创建一个矩形,通过六个数值指定矩形，其内部公式计算较为复杂， */
+    /* transform: matrix(1,0,0,1,30,30); */
+
+    /* 多个属性值空格隔开 */
+    /* transform: rotate(45deg) scale(1.5); */
+
+    transform: rotate(45deg);
+
+    /* 设置旋转的基本 */
+    /* transform-origin: center center ; */
+
+   /* transform-origin:50% 50% ; */
+
+   /* transform-origin: left top; */
+
+   /* 通过坐标 */
+   transform-origin: 0 0;
+
+
+
+}
