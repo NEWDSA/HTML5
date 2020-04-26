@@ -1,0 +1,54 @@
+@charset "utf-8";
+body{
+    margin: 100px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    background-color: white;
+
+    /* 过渡属性 */
+    transition-property:background-color,color,margin-left;
+    /* 简便写法 直接 all */
+    /* transition-property: all; */
+    transition-duration: 1s;
+
+    /* 默认 */
+    /* transition-timing-function:ease; */
+
+    /* 匀速 */
+    /* transition-timing-function: linear; */
+
+    /* 减速状态 */
+    /* transition-timing-function: ease-out; */
+
+    /* 加速状态 */
+    /* transition-timing-function:ease-in; */
+
+    /* 设置缓动效果 平滑过渡*/
+    /* transition-timing-function: cubic-bezier(0.25, 0.65, 0.88, 0.25); */
+
+    /* 跳跃式过渡 什么不写就是跳跃式过渡 */
+
+    /* 一次跳跃 */
+    /* transition-timing-function: steps(5,end); */
+
+    /* 过渡延迟效果 */
+    /* transition-delay: 0s,2s,5s; */
+
+    /* 简写版本 */
+    /* transition:background-color 1s ease 0s,color 1s ease 1s,margin-left 1s ease 0s; */
+
+    /* 更简便的方法 */
+    transition:all 1s ease-in 0s;
+
+    
+}
+
+div:hover{
+    background-color:black;
+    color: white;
+    margin-left: 100px;
+}
