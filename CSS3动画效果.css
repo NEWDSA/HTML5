@@ -1,0 +1,59 @@
+@charset "utf-8";
+body {
+    margin: 100px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid green;
+    /* 使用关键帧动画 */
+    /* animation-name: myani; */
+    /* 设置动画播放时间 */
+    /* animation-duration: 1s; */
+    /* 设置缓动 */
+    /* animation-timing-function: ease; */
+    /* 设置延迟 */
+    /* animation-delay: 5s; */
+    /* 设置动画执行次数 */
+    /* animation-iteration-count: 4; */
+    /* animation-iteration-count: infinite; */
+    /* 播放动画方向交替 */
+    /* animation-direction: alternate; */
+    /* 设置停止动画 */
+    /* animation-play-state: paused; */
+    /* 设置结束后不返回 */
+    /* animation-fill-mode:forwards; */
+    /* 设置返回开始位置 */
+    /* animation-fill-mode: backwards; */
+    /* 根据情况产生 forwards 或 backforwards的效果 */
+    /* animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+
+    /* 简写形式完整版 动画名称、触发时间、动画执行次数、设置动画交替、设置延迟、根据情况设置最终停留位置 */
+    animation:myani 1s ease 2 alternate 1s both;
+
+}
+
+/* 第一步创建一个动画,声明一个动画关键帧 */
+
+@keyframes myani {
+    /* 0%,100%{
+        background-color: white;
+        margin-left: 0px;
+    }
+    50%{
+        background-color: black;
+        margin-left: 100px;
+    } */
+    from {
+        background-color: white;
+        margin-left: 0px;
+    }
+    to{
+        background-color: black;
+        margin-left: 100px;
+    }
+}
