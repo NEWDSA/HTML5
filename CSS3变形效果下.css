@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body{
+    margin: 100px;
+}
+
+#a{
+    perspective: 1000px;  /*属性定义 3D 元素距视图的距离*/
+    /* perspective-origin:top right; */
+    /*transform-style: preserve-3d;*/  /*属性指定嵌套元素是怎样在三维空间中呈现。*/
+    /*flat	表示所有子元素在2D平面呈现。*/
+   /*preserve-3d	表示所有子元素在3D空间中呈现。*/
+}
+
+img{
+    /* transform: translate3d(100px,100px,300px); */
+
+    /* 直接设置 z 轴 */
+    /* transform:translateZ(-300px); */
+
+    /* 3D 缩放 */
+    /* transform:scale3d(1.5,1.5,2.5) rotateY(45deg); */
+
+    /* 缩放z 轴 */
+    /* transform:scaleZ(2.5) rotateX(45deg); */
+
+    /* 3d 旋转 */
+    /* 设置 3D 旋转，a表示角度,xyz是0或1之间的数值 0或1代表是否启用这三个轴 */
+    /* transform: rotate3d(0,0,1,45deg); */
+
+    /* x轴,z轴,y轴单独设置旋转 */
+    /* transform: rotateX(120deg); */
+
+    /* 设置基准点旋转 */
+    /* transform: rotateY(45deg); */
+
+    /* 元素内部设置透视 */
+    /* transform: perspective(500px) rotateY(45deg); */
+
+    transform: rotateY(45deg);
+
+}
