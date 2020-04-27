@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+div{
+
+    /* 设置列的宽度 及 列数 */
+    /* columns: 100px 5; */
+
+    /* 设置列间距 */
+    /* column-gap:100px; */
+
+    /* 如果没有设置列数，却设置了每列多少宽度，那么会自动设置列数 */
+    column-width: 150px;
+    /* column-count:3; */
+
+    /* 设置每列中间的分割线 */
+    /* column-rule: 2px dashed gray; */
+
+}
+h1{
+    text-align: center;
+    /* 设置跨列大标题 */
+    column-span: all;
+}
