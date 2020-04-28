@@ -1,0 +1,48 @@
+@charset "utf-8";
+P {
+    width: 150px;
+    border: 1px solid gray;
+    background-color: silver;
+    margin: 5px;
+    padding: 5px;
+}
+
+div {
+    /* background-color: red; */
+    display: -moz-box;
+    display: -webkit-box;
+    /* -moz-box-orient:vertical; */
+
+    /* 伸缩项目沿着内联轴排列显示 */
+    /* -moz-box-orient: inline-axis; */
+
+    /* 伸缩项目沿着块轴排列显示 */
+    /* -moz-box-orient: block-axis; */
+
+    /* 设置伸缩布局中流动顺序 */
+    /* -moz-box-direction: reverse; */
+
+    /* 设置伸缩项目的分布方式 */
+    /* -moz-box-pack: end; */
+    /* -moz-box-pack: justify; */
+
+    /* 处理伸缩容器的额外空间 */
+    /* -moz-box-align: end; */
+    /* -moz-box-align: center; */
+
+    /* 以基线，默认在开头 */
+    /* -moz-box-align: baseline; */
+}
+p:nth-child(1){
+    -moz-box-flex: 1;   /*1是百分之20%*/
+    /* 将第一个位置跳转到第二个位置 */
+    -moz-box-ordinal-group: 2;
+}
+p:nth-child(2){
+    -moz-box-flex: 3; /*3是百分之60%*/
+    -moz-box-ordinal-group: 1;
+}
+p:nth-child(3){
+    -moz-box-flex: 1;
+    -moz-box-ordinal-group: 3;
+}
