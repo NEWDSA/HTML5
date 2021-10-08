@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>测试</title>
+    <script type="text/javascript">
+        (function () {
+            // deicePixelRatio:设备像素
+            var scale = 1 / devicePixelRatio;
+            //设置meta 压缩界面 模拟设备的高分辨率
+            document.querySelector('meta[name="viewport"').setAttribute('content', 'initial-scale=' + scale + ',maximum-scale=' + scale + ',minimum-scale=' + scale + ',user-scalable=no');
+            //debounce 为节流函数，自己实现。或者引入underscoure即可。
+            /**
+       *
+       * @param fn {Function}   实际要执行的函数
+       * @param delay {Number}  延迟时间，也就是阈值，单位是毫秒（ms）
+       *
+       * @return {Function}     返回一个“去弹跳”了的函数
+       */
+            function debounce(fn, delay) {
+
+                // 定时器，用来 setTimeout
+                var timer
+
+                // 返回一个函数，这个函数会在一个时间区间结束后的 delay 毫秒时执行 fn 函数
+                return function () {
+
+                    // 保存函数调用时的上下文和参数，传递给 fn
+                    var context = this
+                    var args = arguments
+
+                    // 每次这个返回的函数被调用，就清除定时器，以保证不执行 fn
+                    clearTimeout(timer)
+
+                    // 当返回的函数被最后一次调用后（也就是用户停止了某个连续的操作），
+                    // 再过 delay 毫秒就执行 fn
+                    timer = setTimeout(function () {
+                        fn.apply(context, args)
+                    }, delay)
+                }
+            }
+            // var reSize = _.debounce(function () {
+            //     var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+            //     //按照640像素下字体为100px的标准来，得到一个字体缩放比例值 6.4
+            //     document.documentElement.style.fontSize = (deviceWidth / 6.4) + 'px';
+            // }, 50);
+
+            var reSize = debounce(function() {
+      var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+      //按照640像素下字体为100px的标准来，得到一个字体缩放比例值 6.4
+      document.documentElement.style.fontSize = (deviceWidth / 6.4) + 'px';
+  }, 50);
+            window.onresize = reSize;
+        })();
+    </script>
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-size: 16px;
+        }
+
+        div {
+            height: 0.5rem;
+            height: 0.5rem;
+            border: 0.01rem solid #19a39e;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
